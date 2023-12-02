@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
-public class conthefrequency {
+public class contnumberfrequency {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
