@@ -1,21 +1,36 @@
-package veer.com;
+package global;
+
+import java.util.Scanner;
 
 public class eacheveryword {
 
-	public static void main(String[] args) {
+	//public static void main(String[] args) {
 		// TODO Auto-generated method stub
-  String string ="sky the blue";
-  String string2 ="";
-  String [] strings =string.split("\\s");
-  
-  for(String waString :strings) {
-	  StringBuilder stringBuilder =new StringBuilder(waString);
-	  stringBuilder.reverse();
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			// TODO Auto-generated method stub
+	  Scanner sc= new Scanner(System.in);
+	  String str=sc.nextLine(); 
+	  String[]words=str.split(" ");
+	  String reverstring=" ";
+	  for(String w:words) {
+		  String reverseword=" ";
+		  for(int i=w.length()-1;i>=0;i--) {
+			  reverseword=reverseword+w.charAt(i);
+			  
+		  }
+		  
+		  reverstring=reverstring+reverseword+" ";
+	  }
 	  
-	  string2=string2+stringBuilder.toString()+ " ";
-  }
-  
-  System.out.print(string2);
+	  System.out.print(reverstring);
+		}
+
+
+
+		
+
+	
+
 	}
 
-}
